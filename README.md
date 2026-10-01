@@ -1,236 +1,33 @@
-<br/><br/>
+# Codex Skills Catalog — Fork
 
-<!-- Animated Title -->
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&pause=1000&color=7C3AED&center=true&vCenter=true&width=800&lines=Skills+%F0%9F%9A%80;Enterprise+Data+Science+%26+AI;Interactive+Analytics+%26+ML;Built+by+Ibrahim+Abdelsattar" alt="Typing SVG"/>
-</a>
+A fork of OpenAI's skills catalog containing task instructions, references, assets, and helper scripts for Codex workflows.
 
-<br/>
+**Technology:** Markdown skills · Reference material · Task-specific scripts
 
-<p align="center">
-  <b>Enterprise-Grade Data Science & Software Engineering Solution</b><br/>
-  <i>Data Analysis Frameworks · Python 3.10+</i>
-</p>
+**Upstream:** [openai/skills](https://github.com/openai/skills). This repository is a fork; original authorship remains with the upstream project and its contributors.
 
-<br/>
+## Features
 
-<!-- Badges Row -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Data%20Analysis%20Frameworks-7C3AED?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python%203.10+-7C3AED?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/License-Academic-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
-</p>
+- Organize task skills under the committed catalog directories.
+- Provide each skill's `SKILL.md` instructions alongside references and optional scripts/assets.
+- Include workflows spanning development, design, documents, research, and other tasks.
 
-<br/>
+## Repository guide
 
-<!-- Quick Links -->
-<p align="center">
-  <a href="#-overview"><img src="https://img.shields.io/badge/📌-Overview-7C3AED?style=flat-square"/></a>
-  &nbsp;
-  <a href="#-core-features"><img src="https://img.shields.io/badge/🔥-Features-E11D48?style=flat-square"/></a>
-  &nbsp;
-  <a href="#%EF%B8%8F-system-architecture"><img src="https://img.shields.io/badge/🏗️-Architecture-0891B2?style=flat-square"/></a>
-  &nbsp;
-  <a href="#-technical-stack"><img src="https://img.shields.io/badge/⚙️-Tech%20Stack-16A34A?style=flat-square"/></a>
-  &nbsp;
-  <a href="#-getting-started"><img src="https://img.shields.io/badge/🚀-Getting%20Started-F59E0B?style=flat-square"/></a>
-</p>
+| Path | Purpose |
+|---|---|
+| [skills/.curated](skills/.curated) | Curated task skill folders. |
+| [contributing.md](contributing.md) | Community contribution guidance. |
 
-<br/>
+## Requirements and current limitations
 
----
+This repository is a fork of `openai/skills`. Individual skill directories can include separate `LICENSE.txt` files and their own runtime requirements; inspect those files before reuse. This README does not claim authorship of the upstream catalog or that every listed integration is configured in your environment.
 
-## 📌 Overview
-
-**Skills** is an advanced software and data science repository engineered by **Ibrahim Abdelsattar**. It implements end-to-end data processing pipelines, predictive machine learning models, and production-ready code structures tailored for analytical precision and operational reliability.
-
-> Designed for seamless integration, high scalability, and robust computational performance.
-
----
-
-## 🎯 Problem & Solution Architecture
-
-<table>
-<tr>
-<td width="50%">
-
-### ❌ The Challenge
-
-Traditional analytical approaches face critical operational limitations:
-
-- 📉 Manual data wrangling and non-standardized preprocessing
-- 🔮 Lack of feature attribution and model explainability
-- ⚠️ Unoptimized hyperparameters leading to sub-optimal accuracy
-- 🔄 Inefficient deployment workflows and missing pipeline automation
-
-</td>
-<td width="50%">
-
-### ✅ Our Solution
-
-| Challenge | Implemented Solution |
-|-----------|----------------------|
-| Raw Data Noise | Automated cleaning & feature encoding |
-| Low Accuracy | Tuned ML ensembles & robust evaluation |
-| Deployment Gaps | Modular CLI/Web interfaces & reproducible scripts |
-| Missing Insights | Visual metric plots & structured reporting |
-
-</td>
-</tr>
-</table>
-
----
-
-## 🔥 Core Features
-
-<table>
-<tr>
-
-<td align="center" width="33%">
-<br/>
-<b>⚡ High Performance Architecture</b><br/><br/>
-Modular Code Structure<br/>
-Scalable Design Patterns<br/>
-Robust Error Handling<br/>
-Clean Interface Abstractions<br/><br/>
-</td>
-<td align="center" width="33%">
-<br/>
-<b>📊 Data Preprocessing & EDA</b><br/><br/>
-Automated Missing Value Imputation<br/>
-Feature Engineering & Scaling<br/>
-Outlier Detection & Removal<br/>
-Exploratory Data Analysis Plots<br/><br/>
-</td>
-<td align="center" width="33%">
-<br/>
-<b>🎯 Production Guardrails</b><br/><br/>
-Strict Input Validation<br/>
-Reproducible Seed Setting<br/>
-Model Artifact Persistence<br/>
-Comprehensive Logging<br/><br/>
-</td>
-</tr>
-</table>
-
----
-
-## 🏗️ System Architecture & Data Flow
-
-<br/>
-
-```mermaid
-flowchart LR
-    A["📥 Data Ingestion
-Raw Datasets / Inputs"] --> B["🧹 Preprocessing & Cleaning
-Feature Scaling & Encoding"]
-    B --> C["⚙️ Feature Engineering
-Domain Transformation"]
-    C --> D["🤖 Machine Learning Pipeline
-Model Training & Evaluation"]
-    D --> E["📊 Predictive Output & Metrics
-Interactive Dashboard / Reports"]
-    style A fill:#1e1b4b,color:#a5b4fc
-    style B fill:#312e81,color:#c7d2fe
-    style D fill:#1e3a5f,color:#93c5fd
-    style E fill:#14532d,color:#86efac
-```
-
----
-
-## ⚙️ Technical Stack
-
-<div align="center">
-
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Data Analysis Frameworks** | Core Framework / Library | Primary computing and analytical engine |
-| **Python 3.10+** | Core Framework / Library | Primary computing and analytical engine |
-
-</div>
-
----
-
-
-
-## 📁 Directory Structure
-
-<details>
-<summary><b>📂 Click to expand repository tree</b></summary>
-
-```
-skills/
-├── .gitignore
-├── README.md
-├── contributing.md
-│   │   │   ├── LICENSE.txt
-│   │   │   ├── SKILL.md
-│   │   │   │   ├── openai.yaml
-│   │   │   │   ├── dotnet-logo.png
-│   │   │   │   ├── _sections.md
-│   │   │   │   ├── apis-minimal-and-controllers.md
-│   │   │   │   ├── data-state-and-services.md
-│   │   │   │   ├── program-and-pipeline.md
-│   │   │   │   ├── realtime-grpc-and-background-work.md
-│   │   │   │   ├── security-and-identity.md
-│   │   │   │   ├── source-map.md
-│   │   │   │   ├── stack-selection.md
-│   │   │   │   ├── testing-performance-and-operations.md
-│   │   │   │   ├── ui-blazor.md
-│   │   │   │   ├── ui-mvc.md
-│   │   │   │   ├── ui-razor-pages.md
-│   │   │   │   ├── versioning-and-upgrades.md
-│   │   │   ├── LICENSE.txt
-│   │   │   ├── SKILL.md
-│   │   │   │   ├── openai.yaml
-│   │   │   │   ├── app-archetypes.md
-│   │   │   │   ├── apps-sdk-docs-workflow.md
-```
-
-</details>
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.10+ (or Node.js 18+ for web apps)
-- Git & Virtualenv
-
-### Installation & Execution
+## Getting started
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/IbrahimAbdelsattar/skills.git
 cd skills
-
-# 2. Set up virtual environment (Python)
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# 3. Install dependencies
-# Install dependencies listed in codebase
-
-# 4. Launch project execution
-jupyter notebook
 ```
 
----
-
-## 👤 Author & Contact
-
-<div align="center">
-
-**Ibrahim Abdelsattar**  
-*Data Scientist & AI Specialist · MTI University (CS & AI, GPA 3.5)*
-
-[Email](mailto:ibrahimabdelsattar042@gmail.com) · [GitHub](https://github.com/IbrahimAbdelsattar) · [LinkedIn](https://linkedin.com/in/ibrahim-abdelsattar)
-
-<br/>
-
-<img src="https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Maintained%20by-Ibrahim%20Abdelsattar-7C3AED?style=for-the-badge"/>
-
-</div>
+Browse `skills/.curated/` and open the `SKILL.md` for a task you want to understand. Read its prerequisites, referenced files, and commands before using its helper scripts. Follow the installation workflow supported by your Codex environment; copying a README alone does not install a skill.
