@@ -23,6 +23,41 @@ A fork of OpenAI's skills catalog containing task instructions, references, asse
 
 This repository is a fork of `openai/skills`. Individual skill directories can include separate `LICENSE.txt` files and their own runtime requirements; inspect those files before reuse. This README does not claim authorship of the upstream catalog or that every listed integration is configured in your environment.
 
+## UML diagrams
+
+### Skill packaging model
+
+This UML packaging model describes artifacts inside a skill directory. Its nodes are file roles, not runtime classes; references, scripts, and assets are optional.
+
+```mermaid
+classDiagram
+    direction TB
+    class SkillPackage {
+        <<directory>>
+        name
+    }
+    class SkillInstructions {
+        <<markdown>>
+        SKILL.md
+    }
+    class Reference {
+        <<artifact>>
+    }
+    class HelperScript {
+        <<script>>
+    }
+    class Asset {
+        <<artifact>>
+    }
+    SkillPackage "1" *-- "1" SkillInstructions : instructions
+    SkillPackage "1" *-- "0..*" Reference : references
+    SkillPackage "1" *-- "0..*" HelperScript : scripts
+    SkillPackage "1" *-- "0..*" Asset : assets
+    SkillInstructions ..> Reference : may reference
+    SkillInstructions ..> HelperScript : may invoke
+    HelperScript ..> Asset : may use
+```
+
 ## Getting started
 
 ```bash
